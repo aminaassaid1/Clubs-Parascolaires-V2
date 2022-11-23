@@ -12,9 +12,15 @@ body{
     background-image: url(img/background.png);
     background-position: center;
     background-size: cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 #img {
-    width: 50rem;
+    width: fit-content;
+    border-radius: 50%;
+    overflow: hidden;
 }
 #page {
     overflow: hidden;
