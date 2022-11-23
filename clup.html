@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clup parascolaires</title>
+    <link href="clup.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="ps">
+      <div id="header">
+        <img src="img/logo.jpg" alt="logo" id="logo" />
+        <div>
+          <img
+            src="https://solicode.co/images/logo/Solicode_logo_without_slogan_for_white_BG.svg"
+            alt="solicode"
+            id="solicode"
+          />
+        </div>
+      </div>
+
+      <div id="Sign_up">
+        <div id="img"></div>
+        <form id="side"action='register.html'>
+          <div id="who">
+            <h1>Choose your club</h1>
+            <div id="name">
+              <input type="text" id="nameinput" name="first_name" placeholder="First name" />
+              <p class="error" id="nerror">First name must not exceed 30 characters</p>
+              <input type="text" id="last" name="last_name" placeholder="Last name" />
+            </div>
+            <p class="error" id="lasterror">Last name must not exceed 30 characters</p>
+            <input type="text" placeholder="Email" name="email"  id="email"/>
+            <P class="error" id="emailerror">The email must be (firstname.lastname@ofppt.ma)</P>
+            <input type="text" placeholder="Phone number" id="num" name="num" />
+            <p class="error" id="phoneerror">Only moroccain phone number pattern are supported</p>
+          </div>
+          <!-- Gender -->
+          <div id="Gender">
+            <h3>Gender</h3>
+            <div>
+              <div class="input-group">
+                <input type="radio" name="Gender" />
+                <label for="male">Male</label>
+              </div>
+              <div class="input-group">
+                <input type="radio" name="Gender" />
+                <label for="female">Female</label>
+              </div>
+            </div>
+            <p class="error" id="gendererror">choose your gender</p>
+          </div>
+          <!-- Groups -->
+          <div id="groups">
+            <h3>Groups</h3>
+            <div>
+              <div class="input-group">
+                <input type="radio" name="Groups" class="grp" id="DW101"/>
+                <label for="dw101" >DW101</label>
+              </div>
+              <div class="input-group">
+                <input type="radio" name="Groups" class="grp" id="DW102" />
+                <label for="dw102">DW102</label>
+              </div>
+              <div class="input-group">
+                <input type="radio" name="Groups" class="grp" id="DW103" />
+                <label for="dw103">DW103</label>
+              </div>
+              <div class="input-group">
+                <input type="radio" name="Groups" class="grp" id="DM101" />
+                <label for="dm101">DM101</label>
+              </div>
+              <div class="input-group">
+                <input type="radio" name="Groups" class="grp" id="DM102" />
+                <label for="dw102">DM102</label>
+              </div>
+            </div>
+            <p class="error" id="grouperror">choose your groups</p>
+          </div>
+          <!--clubs-->
+          <div id="clubs">
+            <h3>Clubs</h3>
+            <select name="clubs" multiple>
+              <option value="computing" class="clubs">computing</option>
+              <option value="Robotics" class="clubs">Robotics</option>
+              <option value="Chess" class="clubs">Chess</option>
+              <option value="music" class="clubs">music</option>
+              <option value="foot" class="clubs">football</option>
+              <option value="Theater" class="clubs">Theater</option>
+            </select>
+            <p class="error" id="cluberror">choose at least 1 club and at most 3</p>
+          </div>
+          <input type="submit" value="register">
+        </form>
+      </div>
+    </div>
+    <script src="clup.js"></script>
+  </body>
+</html>
